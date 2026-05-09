@@ -1,51 +1,51 @@
 
-# # 1. Taking input in Python 
-# value = input("Enter your value: ")
-# print(value)
+# 1. Taking input in Python 
+value = input("Enter your value: ")
+print(value)
 
-# # 2. How the input() Function works
-# num = input("Enter number: ")
-# print(num)
-# name1 = input("Enter name: ")
-# print(name1)
+# 2. How the input() Function works
+num = input("Enter number: ")
+print(num)
+name1 = input("Enter name: ")
+print(name1)
 
-# print("type of num", type(num))
-# print("type of name", type(name1))
+print("type of num", type(num))
+print("type of name", type(name1))
 
-# # 3. Converting Input into Numbers
-# # Integer Input
-# num = int(input("Enter a number: "))
-# print(num, "is type of", type(num))
-# # Floatin-Point Input
-# floatNum = float(input("Enter a decimal number: "))
-# print(floatNum, "is of type", type(floatNum))
-# # Taking Multiple Inputs
-# x, y = input("Enter two numbers separed by space: ").split()
-# print("First number:", x)
-# print("Second number:", y)
+# 3. Converting Input into Numbers
+# Integer Input
+num = int(input("Enter a number: "))
+print(num, "is type of", type(num))
+# Floatin-Point Input
+floatNum = float(input("Enter a decimal number: "))
+print(floatNum, "is of type", type(floatNum))
+# Taking Multiple Inputs
+x, y = input("Enter two numbers separed by space: ").split()
+print("First number:", x)
+print("Second number:", y)
 
-# # 5. Printing Output using print()
-# print("Hello World!")
+# 5. Printing Output using print()
+print("Hello World!")
 
-# # 6. Printing Variables
-# name = "Mamun"
-# print(name)
+# 6. Printing Variables
+name = "Mamun"
+print(name)
 
-# name = "Habib-Mamun"
-# age = 25
-# city = "Dhaka"
-# print(name, age, city)
+name = "Habib-Mamun"
+age = 25
+city = "Dhaka"
+print(name, age, city)
 
-# # 7. Change the Type of Input in Python
-# color = input("What color is rose?: ")
-# print(color)
-# color = int(input("How many roses?: "))
-# print(color, type(color))
-# price = float(input("Price of each rose?: "))
-# print(price, type(price))
-# i = int(input("How old are you?: "))
-# j = float(input("Evaluate 7/2: "))
-# print(i, j)
+# 7. Change the Type of Input in Python
+color = input("What color is rose?: ")
+print(color)
+color = int(input("How many roses?: "))
+print(color, type(color))
+price = float(input("Price of each rose?: "))
+print(price, type(price))
+i = int(input("How old are you?: "))
+j = float(input("Evaluate 7/2: "))
+print(i, j)
 
 ###
 # Type Casting in Python
