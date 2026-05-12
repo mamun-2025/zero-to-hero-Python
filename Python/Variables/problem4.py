@@ -27,3 +27,16 @@ for i in range(1, 101):
    total = total + i 
 
 print("Sum =", total)
+
+# 4. Print table of 5
+# We use a loop to print multiplication table 
+for i in range(1,  11):
+   print("5 x", i, "=", 5 * i)
+
+
+# 5. Print multiplication table of any number
+# We use a loop to print the table
+num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+   print(f"{num} x {i} = {num * i}")

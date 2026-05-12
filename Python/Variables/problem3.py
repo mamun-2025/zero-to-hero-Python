@@ -1,5 +1,5 @@
 
-# 1. swap two numbers
+# 1. swap two numbers without using temp variable 
 # Swapping means exchanging values
 a = 10 
 b = 20
