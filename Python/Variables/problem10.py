@@ -1,13 +1,4 @@
 
-# 13. Find BMI (Body Mass Index)
-# BMI formula: BMI = Weight(kg) / Height(m)2
-# Weight in Kilograms(kg) and Height in meters
-# ৫.৭ ফুট ≈ ১.৭৩৭ মিটার।
-weight = float(input("Enter weight in kg: "))
-height = float(input("Enter height in meters: "))
-
-bmi = weight / (height * height)
-print("BMI =", bmi) 
 # 1. Find percentage of marks
 # Percentancge formula: Percentage = Obtained Marks/Total Marks x 100
 
@@ -110,3 +101,12 @@ meters = feet * 0.3048
 
 print("Meters =", meters)
 
+# 13. Find BMI (Body Mass Index)
+# BMI formula: BMI = Weight(kg) / Height(m)2
+# Weight in Kilograms(kg) and Height in meters
+# ৫.৭ ফুট ≈ ১.৭৩৭ মিটার।
+weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in meters: "))
+
+bmi = weight / (height * height)
+print("BMI =", bmi) 
