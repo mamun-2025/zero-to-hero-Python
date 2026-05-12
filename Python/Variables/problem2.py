@@ -10,3 +10,11 @@ print(num * 2)
 num = float(input("Enter a decimal number: "))
 print(num * 2)
 
+# 3. Find speed using distance and time.
+# Speed formula: Speed = Distance/Time
+distance = float(input("Enter distance: "))
+time = float(input("Enter time: "))
+
+speed = distance / time 
+
+print("Speed =", speed)

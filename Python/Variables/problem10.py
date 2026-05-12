@@ -1,5 +1,13 @@
 
+# 13. Find BMI (Body Mass Index)
+# BMI formula: BMI = Weight(kg) / Height(m)2
+# Weight in Kilograms(kg) and Height in meters
+# ৫.৭ ফুট ≈ ১.৭৩৭ মিটার।
+weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in meters: "))
 
+bmi = weight / (height * height)
+print("BMI =", bmi) 
 # 1. Find percentage of marks
 # Percentancge formula: Percentage = Obtained Marks/Total Marks x 100
 
@@ -52,3 +60,53 @@ kilograms = int(input("Enter kilograms: "))
 
 grams = kilograms * 1000
 print("Grams =", grams)
+
+# 7. Convert weeks into days
+# 1 week = 7 days
+# Days = weeks x 7
+weeks = int(input("Enter weeks: "))
+days = weeks * 7
+
+print("Days =", days)
+
+# 8. Convert centimeters into meters
+# 1 meter = 100 centimeters
+# Meters = centimeters/100
+centimeters = float(input("Enter centimeters: "))
+meters = centimeters / 100
+
+print("Meters =", meters)
+
+# 9. Convert years into months
+# 1 year = 12 months
+# Month = years x 12
+years = int(input("Enter years: "))
+months = years * 12
+
+print("Months =", months)
+
+# 10. Convert megabytes into gigabytes
+# 1 gigabyte = 1024 megabytes
+# Gigabyte = megabyte / 1024
+megabytes = float(input("Enter megabytes: "))
+gigabytes = megabytes / 1024
+
+print("Gigabyte =", gigabytes)
+
+# 11. Find power of a number
+# Power menas multiplying a number by itself multiple times.
+# 2^3 = 8 , In python, we use **
+
+base = int(input("Enter base number: "))
+power = int(input("Enter power: "))
+
+result = base ** power
+
+print("Result =", result)
+
+# 12. Convert feet into meter
+feet = float(input("Enter feet: "))
+meters = feet * 0.3048
+
+print("Meters =", meters)
+

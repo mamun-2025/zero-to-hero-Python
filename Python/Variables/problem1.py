@@ -61,6 +61,16 @@ num ** (1/3)         Cube Root
 l * w	               Area of rectangle
 2 * (l + w)          Perimeter
 (9/5) * C + 32	      Celsius → Fahrenheit
+meters * 100       	Meters → Centimeters
+bytes / 1024	      Bytes → Kilobytes
+base ** power	      Power
+total / 3	         Average
+years * 12	         Years → Months
+MB / 1024	         Megabytes → Gigabytes
+
+
+
+
 (obtained/total)*100  Percentage
 
 

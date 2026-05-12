@@ -26,3 +26,15 @@ print("Average =", average)
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 print("Remainder =", a % b)
+
+# 4. Find total and average marks of 3 subjects
+# First add all marks to get total. Then diveie by 3 to get average .
+# Average = a + b  + c / 3
+math = float(input("Enter Math marks: "))
+english = float(input("Enter English marks: "))
+science = float(input("Enter Science marks: "))
+
+total = math + english + science
+average = total / 3
+
+print(f"Total ={total}marks and Average ={average}")
