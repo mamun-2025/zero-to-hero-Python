@@ -119,3 +119,45 @@ The not operator inverts the Boolean value of the expression.
 Since a = 0 (which is considered False), not a evaluates to True.
 As a result, the condition if not a is true and the program prints "Boolean value of a is False".
 """
+
+# 4. Boolean equivalent (==) and not equivalent(!=) Operator
+"""
+Both operators are used to compare two results. '==' equivalent operator returns True if two results are equal 
+and '!=' not equivalent operator returns True if the two results are not same.
+"""
+a = 0
+b = 1
+
+if a == 0:
+   print(True)
+
+if a == b:
+   print(True)
+
+if a != b:
+   print(True)
+
+
+# 5. Python is Operator
+"""
+is keyword is used to test whether two variables belong to the same object. 
+The test will return True if the two objects are the same else it will return False even if the two objects are 100% equal.
+"""
+x = 10
+y = 11
+
+if x is y:
+   print(True)
+else:
+   print(False)
+
+
+# 6. Python in Operator
+"""
+in operator checks for the membership i.e. checks if the value is present in a list, tuple, range, string, etc.
+"""
+a = [1, 2, 2]
+
+if 1 in a:
+   print(True)
+
