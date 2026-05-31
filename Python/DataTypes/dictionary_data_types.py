@@ -37,3 +37,8 @@ print(d)
 
 
 # 2. Accessing Dictionary Items 
+d = {"name": "Habib", "age": 30}
+print(d["name"]) # Accessing using key
+print(d["age"])
+print(d.get("name")) # Accessing using get() method
+print(d.get("age"))
