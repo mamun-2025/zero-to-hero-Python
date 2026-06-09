@@ -17,12 +17,27 @@ They can accept input values through parameters, perform specific tasks and opti
 def fun():
    print("Welcome to GeeksforGeeks")
 
+##
+def func(name):
+   print("Hello,", name)
+
+func("Nondita")
+
+
 
 ## 3. Calling a Function
 def fun():
    print("Welcome to GeeksforGeeks")
 
 fun()
+
+
+## 
+def greet(name, age):
+   print(name, age)
+
+greet("Mamun", 25)
+
 
 ##
 def func():
@@ -73,12 +88,35 @@ print(evenOdd(16))
 print(evenOdd(7))
 
 
+
 ## 5. Types of Function Arguments
+##
 def myFunc(x, y=50):
    print("X: ", x)
    print("Y: ", y)
 
 myFunc(10)
+
+## 
+def fun(name, age):
+   print(name, "is", age, "Years old.")
+
+fun(name = "Mamun", age = 30)
+
+## 
+def student(fname, lname):
+   print(fname, lname)
+
+student(fname="Mamun", lname="Bepari")
+
+
+##
+def nameAge(name, age):
+   print("Hi", "I am", name)
+   print("My age is ", age, "years old.")
+
+nameAge(name="Mamun", age=30)
+
 
 
 ## 6. Function within Functions
@@ -91,10 +129,19 @@ def f1():
 f1()
 
 
+
+
 ## 7. Return statement
+##
 def value(num):
    return num**2
 
 print(value(10))
 print(value(5))
 
+##
+def fun(num):
+   return num * num 
+
+res = fun(5)
+print(res)
