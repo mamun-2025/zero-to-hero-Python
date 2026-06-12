@@ -28,6 +28,44 @@ It is commonly used for:
 - Tree and graph traversal and Divide-and-conquer algorithms
 
 """
+##
+def factorial(n):
+   if n == 0:
+      return 1
+   
+   else:
+      return n * factorial(n-1)
+   
+print(factorial(6))
+
+##
+def fibonacci(n):
+   if n == 0:
+      return 0
+   elif n == 1:
+      return 1
+   else:
+      return fibonacci(n-1) + fibonacci(n-2)
+   
+print(fibonacci(10))
+
+##
+def tail_factorial(n, acc=1):
+   if n == 0:
+      return acc 
+   else:
+      return tail_factorial(n-1, acc*n)
+   
+def nontail_factorial(n):
+   if n == 0:
+      return 1
+   else:
+      return n  * nontail_factorial(n-1)
+   
+print(tail_factorial(5))
+print(nontail_factorial(5))
+
+
 
 # Example 1: 1 থেকে n পর্যন্ত যোগফল
 def total(n):
