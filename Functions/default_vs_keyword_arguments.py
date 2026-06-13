@@ -8,11 +8,24 @@ This means you don't always need to pass every argument while calling a function
 - If you skip it, the default value is used automatically.
 
 """
+# ফাংশন ডিফাইন করার সময় যদি কোনো প্যারামিটারের একটি ব্যাকআপ বা ডিফল্ট মান দিয়ে দেওয়া হয়, 
+# তবে তাকে Default Argument বলে। 
+# ফাংশন কল করার সময় মান না দিলে এই ডিফল্ট মানটি কাজ করে।
+
+## 
+def intro(name, country="Bangladesh"):
+   print(f"My name is {name} and I live in {country}.")
+
+intro("Mamun")
+intro("Nondita", "Newzland")
+
+##
 def greet(name="Guest"):
    print("Hello", name)
 
 greet()
 greet("Mamun")
+
 
 # Syntax: 
 """
@@ -41,16 +54,24 @@ def student(funcname, lastname="Bepari", student="Fifth"):
 student("Mamun")
 student("Rajib", "Howlader", "seventh")
 student("Johon", "Gates")
-student("Rony", "seventh")
+student("Rony", "Khan")
 
 
 # keyword argument
-def student(fn, ln="Mark", std="Fith"):
-   print(fn, ln, "studies in", std, "Standard")
+# ফাংশন কল করার সময় পজিশন বা সিরিয়াল মেইনটেইন না করে, 
+# সরাসরি প্যারামিটারের নাম ধরে মানpass করাকে Keyword Argument বলে।
+def describe_pet(pet_name, animal_type):
+   print(f"I have a {animal_type}. Her name is {pet_name}")
 
-student(fn="John")
-student(fn="John", std="Seventh")
-student(ln="Gates", fn="John")
+describe_pet(pet_name="Tommy", animal_type="Cat")
+
+##
+def student(name, blood="A+"):
+   print(f"My name is {name} and my blood group is {blood}")
+
+student("Mamun", "B+")
+student("Nondita")
+student(name="Mamun", blood="B+")
 
 
 # mixing positional argument
