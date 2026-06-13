@@ -29,6 +29,8 @@ List/Dictionary-তে রাখা যায়
 এই ক্ষমতা থাকলে Function-কে First Class Citizen বলা হয়।
 
 """
+# First Class Function = FCF
+# Higher Order fucntion = HOF
 def shout(text):
    return text.upper()
 
