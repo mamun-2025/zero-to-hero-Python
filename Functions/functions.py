@@ -5,13 +5,19 @@ Python functions are reusable blocks of code used to perform a specific task.
 They help organize programs into samller sections and execute the same logic whenever needed by calling the function.
 
 """
-## 1. Python def Keyword
+## Python def Keyword
 """
 The def keyword is used to define user-defined functions.
 Functions help organize code into reusable bloks, making programs easier to read, maintain, and reuse. 
 They can accept input values through parameters, perform specific tasks and optionally return results.
 
 """
+
+# ১. Basic Function (মৌলিক ফাংশন)
+# ফাংশন হলো কোডের একটি ব্লক, যা নির্দিষ্ট একটি কাজ করে এবং প্রয়োজন অনুযায়ী বারবার ব্যবহার করা যায়।
+# def কীওয়ার্ড দিয়ে ফাংশন তৈরি করা হয়।
+# ফাংশনের নাম দেওয়ার পর বন্ধনী () দিতে হয়।
+
 
 ## 2. Defining a Function
 def fun():
@@ -30,6 +36,12 @@ def fun():
    print("Welcome to GeeksforGeeks")
 
 fun()
+
+## 
+def greeting():
+   print("Hello, Welcome to python function!")
+
+greeting()
 
 
 ## 
@@ -58,6 +70,14 @@ def function_name (parameters):
 """
 
 ## 4. Function Arguments
+# ফাংশনের ভেতরে বাইরে থেকে কোনো ডেটা বা মান পাঠানোর জন্য যে ভেরিয়েবল ব্যবহার করা হয়, তাকে Parameter বলে। 
+# আর কল করার সময় যে আসল মান পাঠানো হয়, তাকে Argument বলে।
+
+def greet_user(name): # 'name' is a parameter
+   return f"Hello {name}, How are you ?"
+
+print(greet_user("Mamun")) # 'Mamun' is a argument
+
 # Syntax:
 """
 def function_name(arguments):
@@ -65,6 +85,8 @@ def function_name(arguments):
    return value
 
 """
+
+
 ##
 def subtract(x, y):
    return (x - y)
@@ -132,6 +154,16 @@ f1()
 
 
 ## 7. Return statement
+# ফাংশন তার কাজ শেষ করে কোনো ফলাফল বা মান যদি মূল কোডে ফেরত পাঠাতে চায়, তখন return ব্যবহার করা হয়। 
+# return এক্সিকিউট হওয়ার সাথে সাথে ফাংশনের কাজ শেষ হয়ে যায়।
+##
+def add_numbers(a, b):
+   result = a * b 
+   return result 
+
+total = add_numbers(10, 10) # Return value is kept a variable.
+print(f"Total: {total}")
+
 ##
 def value(num):
    return num**2
