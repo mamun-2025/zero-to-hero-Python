@@ -6,8 +6,12 @@ In Python, *args and **kwargs are used to allow functions to accept an arbitrary
 These features provide great flexibility when designing functions that need to handle a varying number of inputs.
 
 """
+
 ## 1. *args
 # ধরো তুমি এমন function বানাতে চাও যেখানে কতগুলো সংখ্যা আসবে আগে থেকে জানো না।
+# ফাংশন কল করার সময় আপনি ঠিক কতগুলো আর্গুমেন্ট পাস করবেন তা যদি আগে থেকে নিশ্চিত না জানা থাকে, 
+# তখন *args ব্যবহার করা হয়। 
+# এটি সব আর্গুমেন্টকে একটি Tuple হিসেবে গ্রহণ করে।
 
 ##
 def add(a, b):
@@ -52,7 +56,9 @@ def multiply(*args):
 print(multiply(2, 3, 4))
 
 
-
+# যদি ফাংশনে কতগুলো কিওয়ার্ড আর্গুমেন্ট (Key-Value জোড়া) পাঠানো হবে তা নির্দিষ্ট না থাকে, 
+# তখন kwargs ব্যবহার করা হয়। 
+# এটি ডেটাগুলোকে একটি Dictionary হিসেবে গ্রহণ করে।
 ## 2. **kwargs
 ##
 def student(**kwargs):
@@ -65,8 +71,8 @@ student(
 )
 
 ##
-def person(**kwars):
-   print(kwars)
+def person(**kwargs):
+   print(kwargs)
 
 person(
    name="Mamun",
@@ -86,6 +92,18 @@ person(
    country= "Bangladesh"
 )
 
+##
+def show_user_info(**kwargs):
+   for key, value in kwargs.items():
+      print(f"{key}: {value}")
+
+show_user_info(
+   name="Mamun",
+   age=25,
+   blood="B+",
+   adult=True,
+   income=12000
+)
 
 ## 
 def fun(**kwargs):
