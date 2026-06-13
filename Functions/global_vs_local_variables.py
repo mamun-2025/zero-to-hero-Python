@@ -13,6 +13,26 @@ Local Variables are defined inside a function and exist only during its executio
 They cannot be accessed from outside the function.
 
 """
+
+# একটি ভেরিয়েবল কোডের কোন কোন জায়গা থেকে অ্যাক্সেস করা যাবে, তা নির্ধারণ করে Scope।
+
+# Local Scope: ফাংশনের ভেতরে তৈরি করা ভেরিয়েবল শুধু ওই ফাংশনের ভেতরেই কাজ করে।
+# Global Scope: ফাংশনের বাইরে তৈরি করা ভেরিয়েবল পুরো কোডের যেকোনো জায়গা থেকে অ্যাক্সেস করা যায়।
+
+##
+global_var = "I am global scope."
+
+def my_function():
+   local_var = "I am local scope."
+   print(local_var)
+   print(global_var) # See global scope inside the function.
+
+my_function()
+# print(local_var) # it's error because don't get local variable from the outside.
+
+   
+
+# print(my_function(local_var))
 ## 
 def greet():
    msg = "Hello from the inside the function!"
