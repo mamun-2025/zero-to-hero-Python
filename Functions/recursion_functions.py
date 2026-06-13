@@ -28,6 +28,7 @@ It is commonly used for:
 - Tree and graph traversal and Divide-and-conquer algorithms
 
 """
+
 ##
 def factorial(n):
    if n == 0:
@@ -76,6 +77,7 @@ def total(n):
    return result
    
 print(total(5))  
+
 # Recursive Way
 def total(n):
    if n == 1:
@@ -423,3 +425,7 @@ def fibonacci(n):
    return a 
 
 print(fibonacci(6))
+
+
+
+
