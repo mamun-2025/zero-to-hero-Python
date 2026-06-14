@@ -5,8 +5,25 @@
 Nested Function (Function-এর ভিতরে Function)
 First Class Function (Function return করা যায়)
 Scope (Inner function outer variable access করতে পারে)
+"""
+# যখন একটি Nested Function (ফাংশনের ভেতরের ফাংশন) তার বাইরের ফাংশনের (Outer Function) ভেরিয়েবলকে মনে রাখে— 
+# এমনকি বাইরের ফাংশনটির কাজ শেষ হয়ে যাওয়ার পরেও, তখন তাকে Closure বলে।
+def outer_function(msg):
+   text = msg # আউটার ফাংশনের ভেরিয়েবল
+
+   def inner_function():
+      print(text) # ইনার ফাংশন বাইরের ভেরিয়েবল অ্যাক্সেস করছে
+
+   return inner_function # ইনার ফাংশনটি রিটার্ন করে দেওয়া হলো
+
+# 'outer_function' এর কাজ এখানে শেষ এবং এটি 'my_closure' এ জমা হলো
+my_closure = outer_function("Hello Closure")
+
+# এখন রান করলেও এটি 'text' ভেরিয়েবলের মান মনে রেখেছে
+my_closure() # আউটপুট: হ্যালো ক্লোজার!
 
 
+"""
 2. Closure কী?
 যখন একটি Nested Function (ফাংশনের ভেতরের ফাংশন) তার বাইরের ফাংশনের (Outer Function) ভেরিয়েবলকে মনে রাখে— 
 এমনকি বাইরের ফাংশনটির কাজ শেষ হয়ে যাওয়ার পরেও, তখন তাকে Closure বলে।
