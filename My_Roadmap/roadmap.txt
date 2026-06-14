@@ -1,0 +1,286 @@
+
+
+Phase 1: Python Fundamentals
+এগুলো Python-এর ভিত্তি।
+
+1. Variables
+2. Data Types
+3. Type Conversion
+4. Input / Output
+5. Operators
+6. String
+7. String Methods
+8. List
+9. List Methods
+10. Tuple
+11. Set
+12. Dictionary
+13. Boolean
+14. If / Elif / Else
+15. Match Case (Basic)
+16. For Loop
+17. While Loop
+18. Break
+19. Continue
+20. Nested Loop
+
+_______________________________________________________
+Phase 2: Functions (Deep)
+এটা খুব গুরুত্বপূর্ণ।
+
+1. Basic Function
+2. Parameters
+3. Return
+4. Default Arguments
+5. Keyword Arguments
+6. Scope (LEGB)
+7. Recursion
+8. Lambda
+9. *args
+10. **kwargs
+11. First Class Function
+12. Higher Order Function
+13. Closure
+14. Decorator
+15. functools.wraps
+16. Decorator With Arguments
+
+এগুলো ভালোভাবে বুঝলে Django/FastAPI-এর অনেক কিছু সহজ হবে।
+
+_______________________________________________________________
+Phase 3: Python Data Processing
+1. List Comprehension
+2. Dictionary Comprehension
+3. Set Comprehension
+4. Generator Expression
+5. map()
+6. filter()
+7. zip()
+8. enumerate()
+9. sorted()
+10. any()
+11. all()
+
+_______________________________________________________________
+Phase 4: OOP (Very Important)
+এই অংশ Backend-এর জন্য অনেক গুরুত্বপূর্ণ।
+
+OOP Foundation
+1. Class
+2. Object
+3. Attribute
+4. Method
+5. Constructor (__init__)
+6. Instance Variable
+7. Instance Method
+OOP Intermediate
+8. Class Variable
+9. Class Method
+10. Static Method
+11. Property
+12. Encapsulation
+13. Getter
+14. Setter
+OOP Advanced
+15. Inheritance
+16. Multiple Inheritance
+17. Method Overriding
+18. super()
+19. Polymorphism
+20. Abstract Class
+21. Magic Methods
+Magic Methods
+__str__
+__repr__
+__len__
+__add__
+__eq__
+
+_________________________________________________________________
+Phase 5: Iterator & Generator
+Iterator আগে, Generator পরে।
+
+1. Iterable
+2. Iterator
+3. iter()
+4. next()
+5. Custom Iterator
+
+6. Generator
+7. yield
+8. Generator Expression
+9. send()
+10. yield from
+
+_________________________________________________________
+Phase 6: Context Manager
+
+1. with Statement
+2. __enter__
+3. __exit__
+4. Custom Context Manager
+5. contextlib
+6. @contextmanager
+
+_____________________________________________________________
+Phase 7: File Handling
+
+1. open()
+2. read()
+3. readline()
+4. readlines()
+5. write()
+6. append()
+7. with open()
+8. CSV
+9. JSON
+10. Path Handling
+
+_____________________________________________________________
+Phase 8: Exception Handling
+
+1. try
+2. except
+3. else
+4. finally
+5. raise
+6. Custom Exception
+7. Exception Hierarchy
+
+_______________________________________________________________
+Phase 9: Modules & Packages
+
+1. import
+2. from import
+3. as keyword
+4. __name__
+5. Module
+6. Package
+7. __init__.py
+8. Standard Library
+
+______________________________________________________________
+Phase 10: Useful Standard Library
+Backend-এ অনেক কাজে লাগে।
+
+1. os
+2. pathlib
+3. datetime
+4. time
+5. json
+6. csv
+7. collections
+8. itertools
+9. functools
+10. uuid
+11. logging
+
+_______________________________________________________________
+Phase 11: Concurrency & Async
+Backend-এর জন্য খুব গুরুত্বপূর্ণ।
+
+1. Threading Basics
+2. ThreadPoolExecutor
+
+3. Multiprocessing
+4. ProcessPoolExecutor
+
+5. Async Function
+6. await
+7. asyncio.run()
+
+8. asyncio.gather()
+
+9. aiohttp
+
+________________________________________________________________
+Phase 12: Database Foundation
+
+1. SQL Basics
+2. PostgreSQL
+3. SELECT
+4. INSERT
+5. UPDATE
+6. DELETE
+7. JOIN
+8. GROUP BY
+9. Index
+10. Transactions
+
+_______________________________________________________________
+Phase 13: Django
+
+1. Django Setup
+2. Project Structure
+3. App Structure
+4. URL Routing
+5. Views
+6. Templates
+7. Models
+8. ORM
+9. Forms
+10. Authentication
+11. Authorization
+12. Middleware
+13. Signals
+14. Caching
+15. Deployment
+
+_______________________________________________________________
+Phase 14: Django REST Framework
+
+1. Serializer
+2. APIView
+3. Generic Views
+4. ViewSets
+5. Routers
+6. JWT Authentication
+7. Permissions
+8. Pagination
+9. Filtering
+10. Throttling
+
+________________________________________________________________
+Phase 15: Backend Engineer Topics
+
+1. Redis
+2. Celery
+3. Email Sending
+4. OTP System
+5. Background Jobs
+6. Docker Basics
+7. Nginx Basics
+8. Linux Basics
+9. Testing
+10. System Design Basics
+___________________________________________________________________
+
+Phase 16: Git & GitHub
+git init
+git add
+git commit
+git branch
+git merge
+git rebase
+github workflow
+
+_______________________________________________________________
+Phase 17: Testing
+unittest
+pytest
+mocking
+
+__________________________________________________________________
+Phase 18: API Documentation
+Swagger
+OpenAPI
+Postman
+
+____________________________________________________________
+Phase 19: Basic System Design
+Client Server
+HTTP
+REST API
+Cache
+Load Balancer
+Database Scaling
