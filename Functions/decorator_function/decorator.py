@@ -13,10 +13,10 @@ Decorators are flexible way to modify or extend behavior of functions or methods
 """
 
 # Step 1: Decorator ছাড়া
-# def greet():
-#    print("Hello")
+def greet():
+   print("Hello")
 
-# greet()
+greet()
 
 """
 এখন তুমি চাইছো:
@@ -29,13 +29,13 @@ After
 """
 
 # Step 2: Function কে Argument হিসেবে পাঠানো
-# def greet():
-#    print("Hello")
+def greet():
+   print("Hello")
 
-# def display(func):
-#    func()
+def display(func):
+   func()
 
-# display(greet)
+display(greet)
 """
 এখানে
 
@@ -47,33 +47,33 @@ greet
 """
 
 # Step 3: Extra Behavior যোগ করা
-# def display(func):
+def display(func):
 
-#    print("Before")
+   print("Before")
 
-#    func()
+   func()
 
-#    print("After")
+   print("After")
 
-# def greet():
-#    print("Hello")
+def greet():
+   print("Hello")
 
-# display(greet)
+display(greet)
 
 
-# ##
-# def greet():
-#    print("Hello")
+##
+def greet():
+   print("Hello")
 
-# def display(func):
+def display(func):
    
-#    print("Before")
+   print("Before")
 
-#    func()
+   func()
 
-#    print("After")
+   print("After")
 
-# display(greet)
+display(greet)
 
 
 # Step 4: New Function Return করা
@@ -521,7 +521,332 @@ print(square(5))
 print(square(5))
    
 
-# Example 10: Decorator With Arguments
+# Example 10: functiontools.wraps
+def logger(func):
+
+   def wrapper():
+
+      print("Before")
+
+      func()
+
+   return wrapper
+
+@logger
+def greet():
+   print("Hello")
+
+print(greet.__name__)
+"""
+এখন দেখি:
+print(greet.__name__)
+
+Output:
+wrapper
+
+কিন্তু Function-এর নাম তো:
+greet
+হওয়ার কথা।
+
+কারণ Decorator apply হওয়ার পর:
+greet = logger(greet)
+হয়ে গেছে।
+
+এখন greet আসলে:
+wrapper function
+কে point করছে।
+
+Visual
+আগে:
+greet
+ ↓
+original greet
+
+পরে:
+greet
+ ↓
+wrapper
+
+তাই:
+greet.__name__
+
+দেখায়:
+wrapper
+
+"""
+# Solution:
+from functools import wraps
+
+def logger(func):
+
+   @wraps(func)
+   def wrapper():
+
+      print("Before")
+
+      func()
+
+   return wrapper
+
+@logger
+def greet():
+   print("Hello")
+
+print(greet.__name__)
+
+"""
+কী করে?
+@wraps(func) original function-এর metadata copy করে।
+
+যেমন:
+__name__
+__doc__
+__module__
+
+ইত্যাদি।
+"""
+
+
+from functools import wraps
+
+def logger(func):
+
+   @wraps(func)
+   def wrapper():
+
+      return func()
+   
+   return wrapper
+
+@logger
+def greet():
+   """This is greet function"""
+   print("Hello")
+
+print(greet.__doc__)
+
+"""
+Backend-এ কেন Important?
+
+ধরো:
+
+FastAPI
+Django
+Flask
+
+Framework গুলো function metadata দেখে।
+
+যদি wraps ব্যবহার না করো:
+API docs
+Debugging
+Logging
+Testing
+Introspection
+
+সমস্যা হতে পারে।
+
+Rule:
+Decorator লিখলে প্রায় সবসময়
+@wraps(func)
+ব্যবহার করবে।
+
+"""
+
+
+
+# # Example 11: Decorator With Arguments
+
+"""
+Normal Decorator:
+@logger
+def greet():
+   pass
+
+Equivalent: greet = logger(greet)
+
+
+কিন্তু আমরা চাই:
+@repeat(3)
+def greet():
+   pass
+   
+মানে:
+Decorator-এরও parameter আছে
+   
+"""
+
+from functools import wraps
+
+def repeat(times):
+
+   def decorator(func):
+
+      @wraps(func)
+      def wrapper():
+
+         for _ in range(times):
+            func()
+
+      return wrapper
+   
+   return decorator
+
+@repeat(3)
+def greet():
+   print("Repeat 3 times")
+
+greet()
+"""
+Flow Diagram
+
+Decorator apply হওয়ার সময়:
+
+@repeat(3)
+
+      ↓
+
+repeat(3)
+
+      ↓
+
+times = 3 remembered
+
+      ↓
+
+return decorator
+
+তারপর:
+
+decorator(greet)
+
+      ↓
+
+func = greet
+
+      ↓
+
+return wrapper
+
+তারপর:
+
+greet()
+
+      ↓
+
+wrapper()
+
+      ↓
+
+for loop
+
+      ↓
+
+greet()
+
+      ↓
+
+3 times
+Memory View
+wrapper
+
+ remembers:
+
+ times = 3
+
+ func = greet
+"""
+
+## 1. Role Check
+from functools import wraps
+
+user_role = "admin"
+
+def require_role(role):
+
+   def decorator(func):
+
+      @wraps(func)
+      def wrapper():
+
+         if user_role != role:
+            print("Access Denied")
+            return 
+
+         return func()
+      
+      return wrapper
+   
+   return decorator
+
+@require_role("admin")
+def delete_user():
+   print("User Deleted")
+
+delete_user()
+
+
+## 2. Retry Decorator:
+from functools import wraps
+
+def retry(times):
+
+   def decorator(func):
+
+      @wraps(func)
+      def wrapper():
+
+         for _ in range(times):
+            func()
+
+      return wrapper
+
+   return decorator
+
+@retry(3)
+def greet():
+   print("Hello")
+
+greet()
+
+
+## 3. Decorator with Arguments Formula
+def decorator_args(data):
+
+   def decorator(func):
+
+      @wraps(func)
+      def wrapper(*args, **kwargs):
+
+         return func(*args, **kwargs)
+      
+      return wrapper
+   
+   return decorator
+"""
+মনে রাখো:
+
+Normal Decorator:
+
+Function
+   ↓
+Decorator
+   ↓
+Wrapper
+
+
+Decorator With Arguments:
+
+Arguments
+    ↓
+Decorator
+    ↓
+Function
+    ↓
+Wrapper
+
+"""
+
+# 4.
 def repeat(times):
 
     def decorator(func):
@@ -540,6 +865,7 @@ def greet():
    print("Hello")
 
 greet()
+
 
 """
 1. Decorator-এর Foundation:
