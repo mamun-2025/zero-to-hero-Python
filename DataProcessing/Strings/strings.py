@@ -464,3 +464,9 @@ print(n.isalnum())
 username = "mamun"
 print(username.isalnum())
 
+
+# Step 26: Mebership Testing
+s = "Python Programming"
+print("Python" in s)
+
+
