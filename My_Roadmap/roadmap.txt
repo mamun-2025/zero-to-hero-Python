@@ -52,14 +52,13 @@ Phase 3: Python Data Processing
 1. List Comprehension
 2. Dictionary Comprehension
 3. Set Comprehension
-4. Generator Expression
-5. map()
-6. filter()
-7. zip()
-8. enumerate()
-9. sorted()
-10. any()
-11. all()
+4. map()
+5. filter()
+6. zip()
+7. enumerate()
+8. sorted()
+9. any()
+10. all()
 
 _______________________________________________________________
 Phase 4: OOP (Very Important)
