@@ -44,21 +44,74 @@ Phase 2: Functions (Deep)
 14. Decorator
 15. functools.wraps
 16. Decorator With Arguments
-
 এগুলো ভালোভাবে বুঝলে Django/FastAPI-এর অনেক কিছু সহজ হবে।
 
 _______________________________________________________________
 Phase 3: Python Data Processing
-1. List Comprehension
-2. Dictionary Comprehension
-3. Set Comprehension
-4. map()
-5. filter()
-6. zip()
-7. enumerate()
-8. sorted()
-9. any()
-10. all()
+1. String and Problem solves
+1. List , List Comprehension and Problem solves
+3. Tuple and Problem solves
+4. Dictionary, Dictionary Comprehension and Problem solves
+5. Set, Set Comprehension and Problem solves
+
+6. Python Built-in Function:
+গ্রুপ ১: অবজেক্ট এবং টাইপ চেকিং (Object & Type Checking)
+      1. len
+      2. type
+      3. isinstance
+
+গ্রুপ ২: টাইপ কাস্টিং / রূপান্তর (Type Casting)
+      4. int
+      5. float
+      6. str
+      7. bool
+
+গ্রুপ ৩: ডাটা স্ট্রাকচার বা কালেকশন তৈরি (Data Structures)
+      8. list
+      9. tuple
+      10. set
+      11. dict
+
+গ্রুপ ৪: লুপ ও সিকোয়েন্স হেল্পার (Loops & Sequences)
+   12. range
+   13. enumerate
+   14. zip
+
+গ্রুপ ৫: ডেটা অ্যানালাইসিস ও সর্টিং (Data & Math Operations)
+   15. max
+   16. min
+   17. sum
+   18. sorted
+
+গ্রুপ ৬: লজিক্যাল কন্ডিশনাল চেকিং (Logical Checking)
+   19. any
+   20. all
+
+গ্রুপ ৭: ফাংশনাল প্রোগ্রামিং (Functional Programming)
+   21. map
+   22. filter
+
+গ্রুপ ৮: ফাইল হ্যান্ডেলিং (File Handling)
+   23. open
+
+গ্রুপ ৯: ইটারেটর কন্ট্রোল (Iterators)
+   24. iter
+   25. next
+
+গ্রুপ ১০: কোড ইন্সপেকশন ও হেল্প (Inspection)
+   26. dir
+   27. help
+
+গ্রুপ ১১: ডাইনামিক অ্যাট্রিবিউট হ্যান্ডেলিং (Dynamic Attributes)
+   28. getattr
+   29. setattr
+   30. hasattr
+
+গ্রুপ ১২: অবজেক্ট অরিয়েন্টেড ডেকোরেটর ও মেথড (OOP Decorators)
+   31. property
+   32. classmethod
+   33. staticmethod
+   34. super 
 
 _______________________________________________________________
 Phase 4: OOP (Very Important)
@@ -72,6 +125,7 @@ OOP Foundation
 5. Constructor (__init__)
 6. Instance Variable
 7. Instance Method
+
 OOP Intermediate
 8. Class Variable
 9. Class Method
@@ -80,6 +134,7 @@ OOP Intermediate
 12. Encapsulation
 13. Getter
 14. Setter
+
 OOP Advanced
 15. Inheritance
 16. Multiple Inheritance
@@ -88,6 +143,7 @@ OOP Advanced
 19. Polymorphism
 20. Abstract Class
 21. Magic Methods
+
 Magic Methods
 __str__
 __repr__
