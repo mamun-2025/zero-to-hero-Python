@@ -180,6 +180,9 @@ value = d.pop("a")
 print(value)  # Key delete but value return 
 print(d) # Other key value return
 
+# removes and returns the last inserted key-value pair
+print(d.popitem())
+
 
 
 
