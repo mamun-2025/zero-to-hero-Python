@@ -288,3 +288,95 @@ Most Important
 এজন্য Tuple জানা গুরুত্বপূর্ণ।
 
 """
+
+
+
+## 17. Nested Dictionary
+# Backend-এ খুব বেশি ব্যবহার হয়।
+student = {
+   "name": "Mamun", 
+   "address": {
+      "city": "Dhaka",
+      "country": "Bangladesh"
+   }
+}
+
+print(student["address"]["country"])
+
+
+
+
+## 18: Real API Response 
+response = {
+   "id": 1, 
+   "name": "Mamun",
+   "email": "mamun@gmail.com"
+}
+
+print(response["name"])
+print(response["email"])
+
+
+
+
+## 19. List of Dictionaries
+users = [
+   {
+      "name": "Mamun",
+      "age": 25
+   },
+   {
+      "name": "Rahim",
+      "age": 30
+   }
+]
+
+print(users[0])
+print(users[1])
+
+# First User Name 
+print(users[0]["name"])
+print(users[0]["age"])
+
+
+
+
+## 20. Dictionary Comprehension
+# List Comprehension-এর মতো।
+squares = {x: x*x for x in range(1, 6)}
+print(squares)
+
+
+
+## 21. Zip() Very Important
+names = ["Mamun", "Rahim", "Karim"]
+ages = [20, 25, 30]
+
+res = list(zip(names, ages))
+print(res)
+
+
+
+## 22. Zip() with Dictionary
+users = ["Mamun", "Habib", "Rudro"]
+id_name = [1, 2, 3]
+
+data = dict(zip(users, id_name))
+print(data)
+
+
+"""
+Backend-এর জন্য সবচেয়ে গুরুত্বপূর্ণ ১০টা Dictionary Operation
+
+1. d["key"]  # access
+2. d.get["key"] # safe access
+3. d["key"] = value # add/update
+4. del d["key"] = # delete
+5. d.pop("key") 
+6. d.keys()
+7. d.values()
+8. d.items()
+9. for k, v in d.items():
+10. dict(zip(a, b))
+
+"""
