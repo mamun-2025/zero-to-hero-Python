@@ -435,46 +435,459 @@ print(f"Adult: {adult_list}")
 
 #_________________________________________________________________________________________
 ## (6). Available products বের করো।
+products = [
+   {"stock": 0},
+   {"stock": 5},
+   {"stock": 10}
+]
+
+available_product = [product for product in products if product["stock"] > 0]
+print(f"Available: {available_product}")
+
+# for loop 
+products = [
+   {"stock": 0},
+   {"stock": 5},
+   {"stock": 10}
+]
+
+available_product = []
+
+for product in products:
+   if product["stock"] > 0:
+      available_product.append(product)
+
+print(available_product)
 
 
 
 
 
+
+#_______________________________________________________________________________________
 ## (7). Completed orders বের করো।
+orders = [
+   {"status": "completed"},
+   {"status": "completed"},
+   {"status": "pending"}
+]
 
+completed_list = [order for order in orders if order["status"] == "completed"]
+print(f"Completed Order: {completed_list}")
+
+# for loop
+orders = [
+   {"status": "completed"},
+   {"status": "completed"},
+   {"status": "pending"}
+]
+
+completed_list = []
+for order in orders:
+   if order["status"] == "completed":
+      completed_list.append(order)
+
+print(completed_list)
+
+
+
+
+
+
+#____________________________________________________________________________________________
 ## (8). Verified users বের করো।
+users = [
+   {"verified": True},
+   {"verified": False},
+   {"verified": True}
+]
 
+verified_list = [user for user in users if user["verified"]]
+# যেহেতু "verified" কী-এর ভেতরের ভ্যালুগুলো ইতিমধ্যেই বুলিয়ান (True অথবা False) আকারে আছে, 
+# তাই শুধু if user["verified"] লিখলেই পাইথন বুঝে নেয় যে মানটি সত্য (True) কিনা। 
+# শর্ত সত্য হলে ডিকশনারিটি নতুন লিস্টে যুক্ত হয়।
+
+print(verified_list)
+
+# for loop
+users = [
+   {"verified": True},
+   {"verified": False},
+   {"verified": True}
+]
+
+verified_list = []
+
+for user in users:
+   if user["verified"]:
+      verified_list.append(user)
+
+print(f"Verified_User: {verified_list}")
+
+
+
+
+
+
+#_______________________________________________________________________________
 ## (9). 90+ students বের করো।
+students = [
+    {"marks":90},
+    {"marks":60},
+    {"marks":99}
+]
 
+top_marks = [student for student in students if student["marks"] >= 90]
+print(top_marks)
+
+# for loop 
+students = [
+    {"marks":95},
+    {"marks":60},
+    {"marks":99}
+]
+
+top_marks = []
+
+for student in students:
+   if student["marks"] >= 90:
+      top_marks.append(student)
+
+print(f"Top marks: {top_marks}")
+
+
+
+
+
+
+
+#_________________________________________________________________________________________
 ## (10). 500 টাকার বেশি products বের করো।
+products = [
+    {"price":100},
+    {"price":500},
+    {"price":1000}
+]
+
+expensive_products = [product for product in products if product["price"] > 500]
+print(expensive_products)
+
+# for loop 
+products = [
+    {"price":100},
+    {"price":500},
+    {"price":1000}
+]
+
+expensive_products = []
+
+for proudct in products:
+   if proudct["price"] > 500:
+      expensive_products.append(proudct)
+
+print(f"Expensive Product: {expensive_products}")
 
 
 
 
+############################################################################################
 
 
 
 ##### Level 3: Aggregation (1-10)
 
 ## (1). সব product price-এর sum বের করো।
+products = [
+   {"price": 100},
+   {"price": 200},
+   {"price": 300}
+]
 
+total_price = sum([product["price"] for product in products])
+print(total_price)
+
+# for loop
+products = [
+   {"price": 100},
+   {"price": 200},
+   {"price": 300}
+]
+
+total_price = 0
+
+for product in products:
+   total_price += product["price"] # প্রতিটি দাম total_price এর সাথে যোগ হচ্ছে
+
+print(total_price)
+
+
+
+
+
+
+#_____________________________________________________________________________________
 ## (2). সব salary-এর total বের করো।
+employees = [
+   {"salary": 20000},
+   {"salary": 30000},
+   {"salary": 35000}
+]
 
+total_salary = sum([employee["salary"] for employee in employees])
+print(total_salary)
+
+# for loop
+employees = [
+   {"salary": 20000},
+   {"salary": 30000},
+   {"salary": 35000}
+]
+
+total_salary = 0
+
+for employee in employees:
+   total_salary += employee["salary"]
+
+print(total_salary)
+
+
+
+
+
+#_____________________________________________________________________________________________
 ## (3). Average marks বের করো।
+students = [
+   {"marks": 60},
+   {"marks": 90},
+   {"marks": 85}
+]
 
+# ১. সব marks-এর যোগফল বের করা হলো
+total_marks = sum([student["marks"] for student in students])
+
+# ২. মোট ছাত্র সংখ্যা বের করা হলো
+total_length = len(students)
+
+# ৩. গড় (Average) বের করা হলো
+average_marks = total_marks/total_length
+
+# আউটপুট যদি পূর্ণসংখ্যায় (Integer) দেখতে চাও
+print(int(average_marks))
+
+# for loop
+students = [
+   {"marks": 60},
+   {"marks": 90},
+   {"marks": 85}
+]
+
+total_marks = 0
+
+for student in students:
+   total_marks += student["marks"]
+
+average_marks = total_marks/ len(students)
+
+print(int(average_marks))
+
+
+
+
+
+
+#__________________________________________________________
 ## (4). সব age-এর average বের করো।
+users = [
+   {"age": 25},
+   {"age": 39},
+   {"age": 30}
+]
 
+total_age = sum([user["age"] for user in users])
+
+total_length = len(users)
+
+average_age = total_age / total_length
+
+print(int(average_age))
+
+
+
+
+
+#_____________________________________________________________________________________
 ## (5). সব order amount-এর sum বের করো।
+orders = [
+   {"amount": 3000},
+   {"amount": 3500},
+   {"amount": 4000}
+]
 
+total_amount = sum([order["amount"] for order in orders])
+
+print(total_amount)
+
+# for loop
+orders = [
+   {"amount": 3000},
+   {"amount": 3500},
+   {"amount": 4000}
+]
+
+total_amount = 0
+
+for order in orders:
+   total_amount += order["amount"]
+
+print(total_amount)
+
+
+
+
+
+
+#__________________________________________________________________________________
 ## (6). সব quantity-এর sum বের করো।
+items = [
+   {"quantity": 5},
+   {"quantity": 10},
+   {"quantity": 15}
+]
 
+total_quantity = sum([item["quantity"] for item in items])
+print(total_quantity)
+
+# for loop
+items = [
+   {"quantity": 5},
+   {"quantity": 10},
+   {"quantity": 15}
+]
+
+total_quantity = 0
+
+for item in items:
+   total_quantity += item["quantity"]
+
+print(total_quantity)
+
+
+
+
+
+#_________________________________________________________________________________
 ## (7). Maximum price বের করো।
+products = [
+   {"price": 100},
+   {"price": 500},
+   {"price": 250}
+]
 
+max_price = max(product["price"] for product in products)
+
+print(max_price)
+
+# for loop
+products = [
+   {"price": 100},
+   {"price": 500},
+   {"price": 250}
+]
+
+# প্রথম প্রোডাক্টের প্রাইসকে শুরুতে সর্বোচ্চ ধরে নেওয়া হলো
+max_price = products[0]["price"]
+
+for product in products:
+   if product["price"] > max_price:
+      max_price = product["price"]
+
+print(max_price)
+
+
+
+
+
+
+
+#_______________________________________________________________________________
 ## (8). Minimum price বের করো।
 
+products = [
+    {"price": 100},
+    {"price": 500},
+    {"price": 250}
+]
+
+min_price = min(product["price"] for product in products)
+print(min_price)
+
+# for loop
+products = [
+    {"price": 100},
+    {"price": 500},
+    {"price": 250}
+]
+
+min_price = products[0]["price"]
+
+for product in products:
+   if product["price"] < min_price:
+      min_price = product["price"]
+
+print(min_price)
+
+
+
+
+
+
+#__________________________________________________________________________________
 ## (9). Highest marks বের করো।
-
 ## (10). Lowest marks বের করো।
+students = [
+    {"marks": 85},
+    {"marks": 95},
+    {"marks": 70}
+]
+
+highest_marks = max(student["marks"] for student in students)
+lowest_marks = min(student["marks"] for student in students)
+
+print(highest_marks)
+print(lowest_marks)
+
+
+# for loop
+# highest marks:
+students = [
+    {"marks": 85},
+    {"marks": 95},
+    {"marks": 70}
+]
+
+highest_marks = students[0]["marks"]
+
+for student in students:
+   if student["marks"] > highest_marks:
+      highest_marks = student["marks"]
+
+print("Highest Marks:", highest_marks)
+
+# lowest marks
+students = [
+    {"marks": 85},
+    {"marks": 95},
+    {"marks": 70}
+]
+
+lowest_marks = students[0]["marks"]
+
+for student in students:
+   if student["marks"] < lowest_marks:
+      lowest_marks = student["marks"]
+
+
+print(f"Lowest_marks: {lowest_marks}")
 
 
 
@@ -482,26 +895,3 @@ print(f"Adult: {adult_list}")
 
 
 
-##### Level 4: Dictionary Comprehension + Mapping (1-10)
-
-## (1).
-
-## (2).
-
-## (3).
-
-## (4).
-
-## (5).
-
-## (6).
-
-## (6).
-
-## (7).
-
-## (8).
-
-## (9).
-
-## (10).
