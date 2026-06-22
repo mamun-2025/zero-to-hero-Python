@@ -512,3 +512,153 @@ print("ASCII Map:", ascii_map)
 
 # আমাদের Level 4 দুর্দান্ত গতিতে শেষ হলো! 
 # ডিকশনারি কম্প্রহেনশনের এই কনসেপ্টগুলো ব্যাকএন্ডে ডেটা স্ট্রাকচার রি-শেপ (Reshape) করতে সবচেয়ে বেশি কাজে লাগে।
+
+
+
+
+########################################################################################
+
+##### Level 5: Backend Interview Style (41-50)
+"""
+টেকনিক্যাল ইন্টারভিউতে এবং রিয়েল-টাইম প্রোডাকশন সার্ভারে 
+পারমিশন চেক, 
+ডুপ্লিকেট রিমুভাল, 
+আর অ্যানালিটিক্স যেভাবে করা হয়-
+
+"""
+
+## 41. Duplicate Emails Remove
+emails = ["a@gmail.com", "b@gmail.com", "a@gmail.com", "c@gmail.com"]
+
+unique_emails = set(emails)
+print(unique_emails)
+
+
+
+
+## 42. Duplicate User IDs Remove
+user_ids = [101, 102, 101, 103, 102]
+
+unique_ids = set(user_ids)
+print(unique_ids)
+
+
+
+
+
+## 43. Common Users Between Two APIs
+api1 = {"mamun", "rahim", "karim"}
+api2 = {"mamun", "nondita", "rahim"}
+
+common_users = api1 & api2
+print(common_users)
+
+
+
+
+
+## 44. New Users Detection
+all_registered_users = {"mamun", "rahim", "karim"}
+old_database_users = {"mamun", "rahim"}
+
+# লজিক: Difference (-) অপারেটর দিয়ে নতুন বা অমিল ডেটা বের করা
+new_users = all_registered_users - old_database_users
+print("New Detected Users:", new_users)
+
+
+
+
+
+## 45. Permission Checker (RBAC)
+required_permissions = {"read", "write"}
+user_permissions = {"read", "write", "delete"}
+
+has_access = required_permissions.issubset(user_permissions)
+print("Access Grandted?:", has_access)
+
+
+
+
+
+## 46. Role Matching System (Skill Gap Analytics)
+fronted_skills = {"html", "css", "javascript"}
+backend_skills = {"python", "sql", "javascript"}
+
+common_skills = fronted_skills & backend_skills
+print("Overlapping skills:", common_skills)
+
+
+
+
+
+## 47. User Activity Tracker
+user_activity = [1, 2, 3, 1, 2, 4, 1]
+
+active_users = set(user_activity)
+print("Unique Active Users today:", active_users)
+
+
+
+
+
+## 48. Product Inventory Summary
+products = [
+   {"stock": 50},
+   {"stock": 20},
+   {"stock": 5}
+]
+
+total_stock = sum(product["stock"] for product in products)
+print("Total Stock:", total_stock)
+
+
+
+
+
+## 49. Order Revenue Calculator
+orders = [
+   {"amount": 500},
+   {"amount": 700}
+]
+
+total_revenue = sum(order["amount"] for order in orders)
+print("Total Sales Revenue:", total_revenue)
+
+
+
+
+
+## 50. Mini API Analytics
+users = [
+   {"country": "BD", "active": True},
+   {"country": "USA", "active": False},
+   {"country": "BD", "active": True}
+]
+
+total_users = len(users)
+active_users = len([user["active"] for user in users if user["active"] == True])
+unique_countries = {user["country"] for user in users}
+
+country_count = {}
+for user in users:
+   c = user["country"]
+   country_count[c] = country_count.get(c, 0) + 1
+
+
+analytics_dashboard = {
+   "total_users": total_users,
+   "active_users": active_users,
+   "unique_countries": unique_countries,
+   "country_count": country_count
+}
+print("API Analytics Dashboard Response:\n________________________________\n",analytics_dashboard)
+
+
+"""
+অভিনন্দন! 
+তুমি এক টানে পাইথন ব্যাকএন্ড ইঞ্জিনিয়ারিংয়ের বেসিক ও ইন্টারমিডিয়েট লেভেলের 
+পুরো ৫০টি মিনি প্রজেক্ট শেষ করে ফেলেছ। 
+List, Dictionary, Set, Loop, এবং Comprehension-কে কীভাবে মিক্স করে রিয়েল এপিআই রেসপন্স প্রসেস করতে হয়, 
+তার ওপর তোমার লজিক এখন ক্রিস্টাল ক্লিয়ার।
+
+"""
