@@ -6,7 +6,23 @@ when I imagine you at the end of it. I don’t just want to protect you
 —I want to win your heart and spend my life loving you."
 
 
+My Life and My Decision:
+________________________
+Life continue 
+past it past 
+it is never come again 
+the present 
+it's the best gift
+that we have our life.
+Because you don't know , I also don't know.
+what's gonna tomorrow .
+Yes, 
+I don't know, you don't know.
+So live the present 
+
+
 🎵 Stromae - Alors on danse (English Version & Bangla)
+______________________________________________________
 [Intro]
 English: So we— / So we— / So let's—
 
