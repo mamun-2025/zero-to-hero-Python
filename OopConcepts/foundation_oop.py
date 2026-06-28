@@ -1,5 +1,21 @@
 
 
+
+"""
+OOP Problem 1-10
+
+Focus:
+Class
+Object
+Attribute
+Method
+__init__()
+Instance Variable
+Instance Method
+
+"""
+
+
 # Problem 1: Create a Simple class
 class Car:
    def __init__(self, brand):
@@ -177,3 +193,100 @@ class Counter:
    def increment(self):
       self.value += 1
 
+
+
+
+## Task 1:
+class Dog:
+   def __init__(self, name, color):
+      self.name = name 
+      self.color = color 
+
+   def bark(self):
+      return f"Woof! I am {self.name}."
+   
+d = Dog("Tommy", "Brown")
+
+print("Name:", d.name)
+print("Color:", d.color)
+print(d.bark())
+
+
+## Task 2:
+class Circle:
+   def __init__(self, radius):
+      self.radius = radius
+
+   def area(self):
+      return 3.1416 * self.radius ** 2
+   
+circle = Circle(5)
+
+print(circle.radius)
+print(int(circle.area()))
+
+
+## Task 3:
+class User:
+   def __init__(self, username, email):
+      self.username = username
+      self.email = email
+
+   def show_info(self):
+      return f"My name is {self.username} and My email is {self.email}."
+   
+u = User("Mamun Bepari", "mamun@gmail.com")
+
+print(u.username)
+print(u.email)
+print(u.show_info())
+
+
+## Task 4:
+class Wallet:
+   def __init__(self, balance):
+      self.balance = balance
+
+   def add_money(self, amount):
+      self.balance += amount 
+      return f"Add New Balance: {amount}"
+
+   def spend_money(self, amount):
+      if amount <= self.balance:
+         self.balance -= amount
+      else:
+         print("Insufficient Balance")
+   
+
+w = Wallet(10000)
+
+print(w.balance)
+print(w.add_money(10000))
+print(w.balance)
+
+w.spend_money(15000)
+print(w.balance)
+
+w.spend_money(10000)
+print(w.balance)
+
+
+## Task 5:
+class Movie:
+   def __init__(self, title, rating):
+      self.title = title
+      self.rating = rating
+
+   def is_hit(self):
+      return self.rating >= 8
+   
+
+m = Movie("12th fail", 9)
+print(m.title)
+print(m.rating)
+print(m.is_hit())
+
+m2 = Movie("Inception", 6.5)
+print(m2.title)
+print(m2.rating)
+print(m2.is_hit())
