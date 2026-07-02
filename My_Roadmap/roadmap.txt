@@ -1,5 +1,7 @@
 
+##### (1). English Grammer in-use-murphy
 
+###### (2). Python Core
 Phase 1: Python Fundamentals
 এগুলো Python-এর ভিত্তি।
 
@@ -248,7 +250,13 @@ Backend-এর জন্য খুব গুরুত্বপূর্ণ।
 
 9. aiohttp
 
-________________________________________________________________
+10. Django Async Views
+
+
+
+
+###### (3). Django Core
+__________________________________________________________
 Phase 12: Database Foundation
 
 1. SQL Basics
@@ -339,3 +347,11 @@ REST API
 Cache
 Load Balancer
 Database Scaling
+
+
+
+##### (4). Software Engineering English
+
+
+###### (5). DSA + LeetCode
+

@@ -1,0 +1,3 @@
+apple,150
+banana,200
+mango,250
