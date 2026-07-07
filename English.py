@@ -112,3 +112,115 @@
 """
 
 
+
+##### Motivational Lines(50)
+"""
+1. You can do it.
+2. Keep going!
+3. Don't give up.
+4. I believe in you.
+5. Try again, you'll get it.
+6. Great effort!
+7. You improving every day.
+8. That's the spirit!
+9. You're getting better.
+10. Excellent progress.
+11. Be confident.
+12. You're capable.
+13. Keep practicing.
+14. You're very smart.
+15. Well tried!
+16. Don't be afraid of mistakes.
+17. Mistakes help you learn.
+18. You worked hard today.
+19. Believe in yourself.
+20. Keep up the good work.
+21. You're doing great.
+22. Proud of you.
+23. You'r a fast learner.
+24. That's a smart answer.
+25. Stay Positive.
+26. You're on the right track.
+27. I appreciate your effort.
+28. You did your best.
+29. You can improve more.
+30. Keep trying.
+31. Wonderful effort.
+32. Your hard work will pay off.
+33. You're becoming stronger.
+34. You're learning fast.
+35. I'm impressed.
+36. keep shining.
+37. You're showing improvement.
+38. Small progress is still progress.
+39. You tried really well.
+40. You are special.
+41. You handled it nicely.
+42. You're brave.
+43. Good thinking.
+44. Keep believing.
+45. You're almost there.
+46. One more try!
+47. You are doing better than before.
+48. I knew you could do it.
+49. Keep learning.
+50. You made me proud.
+
+"""
+
+
+
+##### Positive Feedback Lines(50)
+"""
+1. Very good!
+2. Excellent work!
+3. Wonderful!
+4. Good job!
+5. Amazing effort!
+6. I'm proud of you.
+7. That's perfect.
+8. You did great.
+9. Well done!
+10. Impressive!
+11. You understood well!
+12. Great improvement!
+13. Yor're very talented.
+14. Smart Answer!
+15. You are leaning fast.
+16. That's correct.
+17. You followed the rules nicly.
+18. Nice try!
+19. That's clean handwriting.
+20. Good thinking!
+21. Very neat work.
+22. That's a wonderful idea.
+23. You explained it well.
+24. I like your confidence.
+25. You're improving everyday.
+26. keep it up.
+27. That's a clever solution.
+28. your drawing is lovely.
+29. You completed it nicely.
+30. I appreciate your hard work.
+31. Excellent Presentation.
+32. You're a responsible student.
+33. Great teamwork.
+34. That's a creative answer.
+35. You followed instructions perfectly.
+36. Your reading is improving.
+37. Fantastice!
+38. That was quick!
+39. You remembered well.
+40. You organised it nicely.
+41. That's neat and tidy.
+42. Your effort is excellent.
+43. Keep trying like this.
+44. You're a star.
+45. Good manners.
+46. You did it without help.
+47. I'm happy with your progress.
+48. Your behaviour was very good today.
+49. You answered confidently.
+50. You made excellent progress.
+
+"""

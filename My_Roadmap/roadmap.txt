@@ -205,153 +205,829 @@ Phase 8: Exception Handling
 7. Exception Hierarchy
 
 _______________________________________________________________
-Phase 9: Modules & Packages
+📚 Phase 9 Roadmap
+Part 1
+✅ Module
+✅ import
+✅ from ... import
+✅ as keyword
 
-1. import
-2. from import
-3. as keyword
-4. __name__
-5. Module
-6. Package
-7. __init__.py
-8. Standard Library
+Part 2
+✅ __name__
+✅ if __name__ == "__main__"
 
+Part 3
+✅ Package
+✅ __init__.py
+✅ Project Structure
+
+
+
+
+### 1 WEEK TARGET 11 JULY - 16 JULY  
 ______________________________________________________________
-Phase 10: Useful Standard Library
-Backend-এ অনেক কাজে লাগে।
+🚀 Phase 10 Roadmap (Backend Standard Library)
+Part 1
+✅ os
+✅ pathlib
 
-1. os
-2. pathlib
-3. datetime
-4. time
-5. json
-6. csv
-7. collections
-8. itertools
-9. functools
-10. uuid
-11. logging
+Part 2
+✅ datetime
+✅ time
+
+Part 3
+✅ json
+✅ csv
+
+Part 4
+✅ collections
+    - Counter
+    - defaultdict
+    - deque
+    - namedtuple
+
+Part 5
+✅ itertools
+✅ functools
+
+Part 6
+✅ uuid
+✅ logging
+
+Part 7
+✅ 50 Backend Practice Problems
+
+Part 8
+✅ 10 Mini Backend Projects
 
 _______________________________________________________________
-Phase 11: Concurrency & Async
-Backend-এর জন্য খুব গুরুত্বপূর্ণ।
+_______________________________________________________________________________________
+🌐 Phase 13: HTTP Protocol (Deep Dive)
+Part 1 — HTTP Fundamentals
+1. Internet কীভাবে কাজ করে?
+2. Client vs Server
+3. HTTP কী?
+4. HTTPS কী?
+5. URL Structure
+6. Domain, DNS
+7. Request & Response
+8. Stateless Protocol
 
-1. Threading Basics
-2. ThreadPoolExecutor
-
-3. Multiprocessing
-4. ProcessPoolExecutor
-
-5. Async Function
-6. await
-7. asyncio.run()
-
-8. asyncio.gather()
-
-9. aiohttp
-
-10. Django Async Views
-
-
-
-
-###### (3). Django Core
-__________________________________________________________
-Phase 12: Database Foundation
-
-1. SQL Basics
-2. PostgreSQL
-3. SELECT
-4. INSERT
-5. UPDATE
+Part 2 — HTTP Request
+1. HTTP Methods
+2. GET
+3. POST
+4. PUT
+5. PATCH
 6. DELETE
-7. JOIN
+7. Idempotent Methods
+8. Safe Methods
+
+Part 3 — HTTP Response
+1. Status Codes
+2. 1xx
+3. 2xx
+4. 3xx
+5. 4xx
+6. 5xx
+7. Common Status Codes
+
+Part 4 — Headers, Body & Parameters
+1. Headers
+2. Request Headers
+3. Response Headers
+4. Query Parameters
+5. Path Parameters
+6. Request Body
+7. JSON
+
+Part 5 — Cookies, Sessions & Authentication
+1. Cookies
+2. Sessions
+3. Authentication
+4. Authorization
+5. JWT Basics
+6. CSRF
+
+Part 6 — REST API + Django Connection
+1. REST
+2. REST API Design
+3. CRUD
+4. HTTP in Django
+5. HTTP in Django REST Framework
+6. Real Backend Examples
+7. Interview Questions
+
+
+_______________________________________________________________________________________________
+📘 Phase 14: Database Foundation (SQL + PostgreSQL)
+Part 1 — SQL Fundamentals
+1. Database কী?
+2. DBMS vs RDBMS
+3. Table
+4. Row
+5. Column
+6. Primary Key
+7. Foreign Key
+8. SQL Basics
+9. PostgreSQL Introduction
+
+Part 2 — Basic SQL
+1. CREATE DATABASE
+2. CREATE TABLE
+3. INSERT
+4. SELECT
+5. WHERE
+6. ORDER BY
+7. LIMIT
+8. DISTINCT
+
+Part 3 — Filtering & Functions
+1. UPDATE
+2. DELETE
+3. LIKE
+4. IN
+5. BETWEEN
+6. IS NULL
+7. Aggregate Functions
 8. GROUP BY
-9. Index
-10. Transactions
+9. HAVING
 
-_______________________________________________________________
-Phase 13: Django
+Part 4 — Relationships
+1. One-to-One
+2. One-to-Many
+3. Many-to-Many
+4. INNER JOIN
+5. LEFT JOIN
+6. RIGHT JOIN
+7. FULL JOIN
+8. Self JOIN
 
-1. Django Setup
-2. Project Structure
-3. App Structure
-4. URL Routing
-5. Views
-6. Templates
-7. Models
-8. ORM
-9. Forms
-10. Authentication
-11. Authorization
-12. Middleware
-13. Signals
-14. Caching
-15. Deployment
+Part 5 — Advanced SQL
+1. Index
+2. Transactions
+3. COMMIT
+4. ROLLBACK
+5. Constraints
+6. Views
+7. Normalization Basics
+8. EXPLAIN
 
-_______________________________________________________________
-Phase 14: Django REST Framework
+Part 6 — Django Connection
+1. PostgreSQL + Django
+2. Django ORM vs SQL
+3. ORM Queries
+4. Relationships in Django Models
+5. Performance Tips
+6. Interview Questions
 
-1. Serializer
-2. APIView
-3. Generic Views
-4. ViewSets
-5. Routers
-6. JWT Authentication
+
+
+
+
+
+
+
+
+
+#############################################################################
+Django Basic-এর পরে শেখা ভালো
+🎯 Phase 11 Roadmap
+Part 1
+✅ Process vs Thread
+✅ Threading Basics
+✅ Thread Class
+✅ start()
+✅ join()
+✅ daemon Thread
+
+Part 2
+✅ ThreadPoolExecutor
+✅ submit()
+✅ map()
+✅ as_completed()
+✅ Backend Examples
+
+Part 3
+✅ Multiprocessing
+✅ Process
+✅ ProcessPoolExecutor
+✅ CPU Bound Tasks
+✅ Backend Examples
+
+Part 4
+✅ Async Programming
+✅ async def
+✅ await
+✅ asyncio.run()
+✅ asyncio.sleep()
+
+Part 5
+✅ asyncio.gather()
+✅ Concurrent Tasks
+✅ Error Handling
+✅ Timeout
+✅ Backend Examples
+
+Part 6
+✅ aiohttp
+✅ Async API Requests
+✅ Async Web Scraping
+✅ Download Multiple URLs
+✅ JSON Response
+
+Part 7
+✅ 50 Practice Problems
+
+Part 8
+✅ 10 Mini Backend Projects
+
+______________________________________________________________________________________________________________
+📘 Phase 12: Socket Programming
+Part 1
+1. Network Basics
+2. IP Address
+3. Port
+4. Socket কী?
+5. TCP vs UDP
+6. Client vs Server
+
+Part 2
+7. socket Module
+8. TCP Server
+9. TCP Client
+10. send()
+11. recv()
+
+Part 3
+12. Multiple Clients
+13. Threading + Socket
+14. Echo Server
+15. Chat Server (Basic)
+
+Part 4
+16. UDP Socket
+17. TCP vs UDP Performance
+18. Backend Examples
+19. Django-তে Socket কোথায় কাজে লাগে?
+20. Practice Problems
+
+#########################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################
+DJANGO ROADMAP:
+📗 Phase 15 — Django Fundamentals
+Part 1
+1. Django কী?
+2. Django Architecture (MVT)
+3. Django Setup
+4. Virtual Environment
+5. Django Installation
+6. First Project
+
+Part 2
+1. Project Structure
+2. manage.py
+3. settings.py
+4. urls.py
+5. wsgi.py
+6. asgi.py
+
+Part 3
+1. App Structure
+2. Creating App
+3. apps.py
+4. admin.py
+5. models.py
+6. views.py
+
+Part 4
+1. URL Routing
+2. path()
+3. include()
+4. URL Parameters
+5. Reverse URL
+6. Namespaces
+
+Part 5
+1. Views
+2. Function Based View (FBV)
+3. Class Based View (CBV)
+4. HttpRequest
+5. HttpResponse
+6. JsonResponse
+
+Part 6
+1. Templates
+2. Template Language
+3. Variables
+4. Filters
+5. Tags
+6. Template Inheritance
+
+Part 7
+1. Static Files
+2. Media Files
+3. CSS
+4. JS
+5. Images
+6. collectstatic
+
+Part 8
+1. Models
+2. Fields
+3. Relationships
+4. Migrations
+5. Admin Panel
+6. Shell
+
+Part 9
+1. Django ORM
+2. CRUD
+3. filter()
+4. exclude()
+5. get()
+6. select_related()
+7. prefetch_related()
+
+Part 10
+1. Django Forms
+2. ModelForm
+3. Validation
+4. Clean Methods
+5. CSRF
+
+📘 Phase 16 — Django Authentication & Authorization
+1. User Model
+2. Custom User Model
+3. Login
+4. Logout
+5. Registration
+6. Password Hashing
 7. Permissions
-8. Pagination
-9. Filtering
-10. Throttling
+8. Groups
+9. Decorators
+10. Mixins
+11. Authentication Backends
+12. JWT Introduction
 
-________________________________________________________________
-Phase 15: Backend Engineer Topics
+📙 Phase 17 — Advanced Django
+1. Middleware
+2. Signals
+3. Sessions
+4. Cookies
+5. Caching
+6. Logging
+7. Email
+8. File Upload
+9. Pagination
+10. Custom Management Commands
 
-1. Redis
-2. Celery
-3. Email Sending
-4. OTP System
-5. Background Jobs
-6. Docker Basics
-7. Nginx Basics
-8. Linux Basics
-9. Testing
-10. System Design Basics
-___________________________________________________________________
+📕 Phase 18 — Django REST Framework
+1. DRF Setup
+2. Serializer
+3. APIView
+4. Generic Views
+5. ViewSets
+6. Routers
+7. Authentication
+8. Permissions
+9. Pagination
+10. Filtering
+11. Throttling
+12. JWT
 
-Phase 16: Git & GitHub
+📒 Phase 19 — Production Django
+1. PostgreSQL
+2. Redis
+3. Celery
+4. Docker
+5. Gunicorn
+6. Nginx
+7. Deployment
+8. CI/CD Basics
+9. Monitoring
+10. Security
+
+
+
+## IMPORTANT PART UNDERSTANDING:
+এটা খুব গুরুত্বপূর্ণ প্রশ্ন। 
+আমার পরামর্শ হবে, একেবারে Django শেখা শুরু করেই E-commerce Project শুরু করো না। 
+আবার পুরো Roadmap শেষ হওয়া পর্যন্তও অপেক্ষা করো না।
+
+তোমার Roadmap অনুযায়ী সবচেয়ে ভালো সময় হলো:
+Phase	Project শুরু করবে?	কারণ
+Phase 15 Part 1–4	❌ না	Django Setup, Project Structure, URL, App—এগুলো Foundation।
+Phase 15 Part 5 (Views)	⚠️ ছোট Practice Project	শুধু View ও URL Practice করার জন্য।
+Phase 15 Part 6 (Templates)	⚠️ UI Practice	HTML Template Render শেখার জন্য।
+Phase 15 Part 8 (Models)	✅ এখান থেকে E-commerce শুরু	এখন Database Design করতে পারবে।
+Phase 15 Part 9 (ORM)	✅✅ সিরিয়াসভাবে Project Build	CRUD, Query, Relationship—এসব ছাড়া E-commerce সম্ভব নয়।
+Phase 15 Part 10 (Forms)	✅	Product Add, Checkout Form, Contact Form।
+Phase 16 (Authentication)	✅	Login, Registration, Profile, Permission।
+Phase 17	✅	Email, Session, Pagination, File Upload যোগ করবে।
+Phase 18 (DRF)	✅	একই Project-এর REST API তৈরি করবে।
+Phase 19	✅	Production-এ Deploy করবে।
+
+আমি হলে কীভাবে করতাম?
+Step 1 — Phase 15 Part 1–7
+
+শুধু Django শিখতাম।
+কোনো বড় Project না।
+ছোট ছোট Example।
+
+যেমন
+
+Hello World
+URL
+Views
+Template
+Static Files
+
+Step 2 — Phase 15 Part 8 (Models)
+
+এখানেই E-commerce Project তৈরি শুরু করতাম।
+প্রথমে শুধু Model Design।
+
+Category
+
+Product
+
+Customer
+
+Cart
+
+CartItem
+
+Order
+
+OrderItem
+
+শুধু Model।
+
+কোনো সুন্দর UI লাগবে না।
+
+Step 3 — Phase 15 Part 9 (ORM)
+
+এখন CRUD।
+Product Create
+Product List
+Product Update
+Product Delete
+Category Filter
+
+Step 4 — Phase 15 Part 10
+
+Forms যোগ করতাম।
+Product Form
+Checkout Form
+Contact Form
+
+Step 5 — Phase 16
+
+Authentication।
+Register
+Login
+Logout
+Profile
+
+Step 6 — Phase 17
+
+Advanced Features।
+Product Image Upload
+Email
+Pagination
+Search
+Caching (প্রয়োজনে)
+
+Step 7 — Phase 18
+
+পুরো Project-এর REST API।
+Product API
+Cart API
+Order API
+Authentication API
+
+Step 8 — Phase 19
+
+Production।
+PostgreSQL
+Redis
+Celery
+Docker
+Gunicorn
+Nginx
+Deployment
+
+E-commerce Project Timeline:
+Phase 15 Part 1–7
+        │
+        ▼
+Foundation Complete
+        │
+        ▼
+Phase 15 Part 8
+        │
+        ▼
+Create E-commerce Project
+        │
+        ▼
+Design Models
+        │
+        ▼
+Phase 15 Part 9
+        │
+        ▼
+CRUD Complete
+        │
+        ▼
+Phase 15 Part 10
+        │
+        ▼
+Forms Complete
+        │
+        ▼
+Phase 16
+        │
+        ▼
+Authentication Complete
+        │
+        ▼
+Phase 17
+        │
+        ▼
+Advanced Features
+        │
+        ▼
+Phase 18
+        │
+        ▼
+REST API
+        │
+        ▼
+Phase 19
+        │
+        ▼
+Deployment
+
+তোমার জন্য আমার নির্দিষ্ট পরিকল্পনা
+
+তোমার আগের কথোপকথন থেকে জানি, 
+তোমার লক্ষ্য হলো Python/Django Backend Engineer হিসেবে Job পাওয়া, 
+এবং তুমি ধাপে ধাপে গভীরভাবে শিখতে চাও। 
+সেই লক্ষ্য অনুযায়ী আমি এভাবে এগোতে বলব:
+
+Phase 15 Part 1–7: শুধু শেখা + ছোট Practice।
+Phase 15 Part 8: এখান থেকে একটি Professional E-commerce Project শুরু।
+এরপর প্রতিটি নতুন Part শেখার সঙ্গে সঙ্গে একই Project-এ Feature যোগ করবে।
+
+এভাবে করলে Project-টি তোমার শেখার সাথে সাথে বড় হবে। 
+শেষে এটি Portfolio Project হিসেবেও ব্যবহার করতে পারবে 
+এবং Interview-তেও আত্মবিশ্বাসের সাথে ব্যাখ্যা করতে পারবে।
+
+
+
+
+
+
+#########################################################################
+Phase 16 — Git & GitHub
+কখন শিখবে?
+
+👉 Phase 15 Part 3 (App Structure) শেষ হওয়ার পরই।
+
+অর্থাৎ Django Project বানাতে শেখার সাথে সাথেই।
+
+কেন?
+
+কারণ তখন থেকেই Project Version Control করা উচিত।
+
+তখন তুমি শিখবে
 git init
-git add
-git commit
-git branch
-git merge
-git rebase
-github workflow
 
-_______________________________________________________________
-Phase 17: Testing
+git status
+
+git add
+
+git commit
+
+git log
+
+.gitignore
+
+এরপর Project বড় হলে
+
+git branch
+
+git checkout
+
+git switch
+
+git merge
+
+git rebase
+
+তারপর
+
+GitHub
+
+push
+
+pull
+
+clone
+
+fork
+
+pull request
+Git Timeline
+Django Setup
+
+↓
+
+First Project
+
+↓
+
+First App
+
+↓
+
+Git Start
+
+Git একেবারে শেষে শেখা উচিত নয়।
+
+Phase 17 — Testing
+কখন?
+
+👉 Phase 18 (DRF) শেষ হওয়ার পরে।
+
+কারণ Testing করার মতো Code তখন থাকবে।
+
+যদি Project-ই না থাকে,
+
+Testing করবে কী?
+
+তখন শিখবে
+
 unittest
+
 pytest
+
+pytest-django
+
+fixtures
+
+factory_boy
+
 mocking
 
-__________________________________________________________________
-Phase 18: API Documentation
+coverage
+
+বাস্তব Example
+
+Login API Test
+
+def test_login():
+    ...
+
+Product API Test
+
+def test_create_product():
+    ...
+
+Order API Test
+
+def test_checkout():
+    ...
+Phase 18 — API Documentation
+কখন?
+
+👉 DRF শেখার সাথে সাথেই।
+
+কারণ
+
+Swagger API ছাড়া ব্যবহারই করা যায় না।
+
+তখন শিখবে
+
 Swagger
+
 OpenAPI
+
+drf-spectacular
+
 Postman
 
-____________________________________________________________
-Phase 19: Basic System Design
-Client Server
-HTTP
-REST API
-Cache
-Load Balancer
-Database Scaling
+API Collections
 
+Example
 
+Product API
 
-##### (4). Software Engineering English
+GET /products/
 
+POST /products/
 
-###### (5). DSA + LeetCode
+DELETE /products/1/
 
+PUT /products/1/
+
+Swagger এগুলো সুন্দরভাবে দেখাবে।
+
+আমি Roadmap এভাবে করতাম
+Phase 15
+Django Fundamentals
+Phase 16
+Git
+
+GitHub
+
+Git Workflow
+Phase 17
+Authentication
+
+Authorization
+Phase 18
+Advanced Django
+Phase 19
+DRF
+Phase 20
+Swagger
+
+OpenAPI
+
+Postman
+Phase 21
+Testing
+
+pytest
+
+mock
+
+coverage
+Phase 22
+Redis
+
+Celery
+Phase 23
+Docker
+
+Gunicorn
+
+Nginx
+
+Deployment
+Final Professional Roadmap
+Python
+        ↓
+OOP
+        ↓
+SQL
+        ↓
+PostgreSQL
+        ↓
+Django Fundamentals
+        ↓
+Git & GitHub
+        ↓
+E-commerce Project Start
+        ↓
+Authentication
+        ↓
+Advanced Django
+        ↓
+Django REST Framework
+        ↓
+Swagger + OpenAPI + Postman
+        ↓
+Testing (pytest)
+        ↓
+Redis
+        ↓
+Celery
+        ↓
+Docker
+        ↓
+Gunicorn
+        ↓
+Nginx
+        ↓
+Deployment
+আমার একটি অতিরিক্ত পরামর্শ
+
+তোমার লক্ষ্য যেহেতু Python/Django Backend Engineer হিসেবে চাকরি করা, তাই Git & GitHub কখনো দেরি করে শিখো না। Django-এর বেসিক Project Structure বোঝার পরই Git ব্যবহার শুরু করো। এরপর থেকে প্রতিটি Project-এ Commit করার অভ্যাস গড়ে তোলো।
+
+অন্যদিকে Testing এবং API Documentation তখনই সবচেয়ে বেশি অর্থবহ হবে, যখন তোমার DRF API তৈরি হয়ে যাবে। তখন এগুলো বাস্তব Project-এর ওপর শিখতে পারবে, ফলে অনেক সহজে মনে থাকবে এবং Interview-তেও আত্মবিশ্বাসের সাথে ব্যাখ্যা করতে পারবে।
