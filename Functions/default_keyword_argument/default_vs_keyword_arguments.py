@@ -17,7 +17,7 @@ def intro(name, country="Bangladesh"):
    print(f"My name is {name} and I live in {country}.")
 
 intro("Mamun")
-intro("Nondita", "Newzland")
+intro("Alex", "Newzland")
 
 ##
 def greet(name="Guest"):

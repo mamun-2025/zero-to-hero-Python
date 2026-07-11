@@ -202,6 +202,7 @@ data = {
 }
 person(**data)
 
+
 ## 7. Real Django Example
 def logger(func):
    def wrapper(*args, **kwargs):

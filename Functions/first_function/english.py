@@ -117,6 +117,37 @@ value = data stored in variable
 
 
  5. Return Statement
+ The return statement sends a value back from a function.
+ def add(a, b):
+   return a + b 
+
+result = add(10, 5)
+print(result)
+
+Explanation:
+"The return statement allows a function to send a result back to the caller.
+ After executin return, the function stops immediately.
+
+Vocabulary:
+return = send back
+result = final output
+caller = the code that calls a function
+immediately = instantly
+output = produced value
+
+Sentence:
+What is a function in python?
+= A function is a reusable block of code that performs a specific task. 
+  It helps us organize code, reduce repetition, and improve maintainability.
+
+What is the difference between parameter an argument?
+= A parameter is a variable defined in the function declaration, 
+  while an argument is the actual value passed during the function call.
+
+Why do we use return?
+= We use return to send a value from a function back to the caller.
+
+
  
 
 """
