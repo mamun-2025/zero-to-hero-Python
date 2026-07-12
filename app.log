@@ -1,0 +1,5 @@
+2026-07-12 19:13:08,305 - INFO - User registered.
+2026-07-12 19:13:08,305 - DEBUG - Debug message
+2026-07-12 19:13:08,305 - INFO - User login successful
+2026-07-12 19:13:08,305 - WARNING - Low disk space
+2026-07-12 19:13:08,306 - ERROR - Database connection failed
