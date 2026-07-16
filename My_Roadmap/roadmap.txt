@@ -389,12 +389,29 @@ Part 5 — Advanced SQL
 8. EXPLAIN
 
 Part 6 — Django Connection
-1. PostgreSQL + Django
-2. Django ORM vs SQL
-3. ORM Queries
-4. Relationships in Django Models
-5. Performance Tips
-6. Interview Questions
+✅ PostgreSQL + Django Configuration
+✅ Django ORM vs Raw SQL
+✅ Basic ORM Queries
+.all()
+.get()
+.filter()
+.exclude()
+.create()
+.update()
+.delete()
+.order_by()
+.values()
+.values_list()
+✅ Relationships in Django Models
+ForeignKey
+OneToOneField
+ManyToManyField
+✅ Performance Basics
+select_related()
+prefetch_related()
+✅ Real Production Examples
+✅ Interview Questions
+
 
 
 
