@@ -577,6 +577,20 @@ Part 9
 6. select_related()
 7. prefetch_related()
 
+তারপর Advanced ORM
+যখন Foundation শেষ হবে তখন শিখবে:
+✅ annotate()
+✅ aggregate()
+✅ F() Expressions
+✅ Q() Objects
+✅ Subquery()
+✅ OuterRef()
+✅ Exists()
+✅ bulk_create()
+✅ bulk_update()
+✅ transaction.atomic()
+
+
 Part 10
 1. Django Forms
 2. ModelForm
